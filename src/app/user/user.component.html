@@ -1,0 +1,12 @@
+<div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div *ngIf="user" class="alert alert-success text-center">
+          <p class="mb-0">Hello, {{ user.name }}! Your email address, {{ user.email }}, has been stored in our user management system for future communication. Welcome to the User Management System.</p>
+
+        </div>
+        <button *ngIf="user" (click)="logout()" class="btn btn-danger d-block mx-auto">Logout</button>
+      </div>
+    </div>
+  </div>
+  
